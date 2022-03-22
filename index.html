@@ -7,31 +7,61 @@
     <link rel="stylesheet" href="dry cleaning.css">
 </head>
 <body>
-    <header id="header">
-        
+
+    <!-- Nav -->
+    <header id="header">  
+        <h2>CLEAN TOUCH</h2>
         <ul>
-            <li><a href="#home" onclick="toggle()">Home</a></li>
-            <li><a href="#About" onclick="toggle()">About</a></li>
-            <li><a href="#services" onclick="toggle()">Services</a></li>
-            <li><a href="#contact" onclick="toggle()">Contact</a></li>
-
-           
-        </ul>
-        
-        <div class="toggle" onclick="toggle()"></div>
+            <li><a href="#Hero">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>  
+        </ul>  
     </header>
-    
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-        function toggle(){
-            var header = document.querySelector("header");
-            header.classList.toggle("active");
-            
-        }
-    </script>
+    <!-- Hero -->
+    <div class="hero" id="Hero">
+        <h2 class="hero-content">YOUR <span class="blue">FAVOURITE</span> 
+        <br /> <span class="big">DRY CLEANERS</span></h2>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="About">
+        <h2>About Us</h2>
+        <p>We offer the best prices when it comes to the laundry market
+            with high level of care <br /> for your materials within the best possible time
+        </p>
+        <div class="btn"><a href=#Services>Services</a></div>
+    </div>
+
+    <!-- Services -->
+    <div class="services" id="Services">
+        <div class="box">
+            <p>We offer Home services at very affordable prices</p>
+            <img src="https://img.icons8.com/fluency/344/home.png" class="services-img" />
+        </div>
+        <div class="box">
+            <p>We at Clean touch make home deliveries. We bring your materials to your door step</p>
+            <img src="https://img.icons8.com/color/344/delivery--v1.png" class="services-img" />    
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="Contact">
+        <h2>Contact Us</h2>
+        <div class="contact-input">
+            <input type="text" placeholder="FULL NAME" class="input-small"/>
+            <input type="text" placeholder="EMAIL" class="input-small"/>    <br />
+            <input type="text" placeholder="MESSAGE" class="input-big"/>
+            <div class="btn"><a href=#Services>Submit</a></div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <h3>Created with &#129505 by Letam</h3>
+    </div>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
 </body>
 </html>

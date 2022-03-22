@@ -12,120 +12,122 @@ body{
     min-height: 1000px;
     
 }
+.blue{
+    color: rgb(83, 83, 212);
+}
+
+/* Header section */
 header{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
+    align-self: center;
+    padding: 0px 30px ;
+    height: 5rem;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: black 0.5px solid;
+    
+    
 }
-header.sticky{
-    padding: 5px 100px;
-    background: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
-
 header ul{
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 header ul li{
-    position: relative;
     list-style: none;
 }
 header ul li a{
-    position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     letter-spacing: 2px;
     font-weight: 300;
-    transition: 0.6s;
-}
-header.sticky .logo,
-header.sticky ul li a
-{
-    color: #000;
 }
 a:hover{
     color: blue;
 }
 
-.toggle{
-    display: none;
+/* Hero section */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/6765167/pexels-photo-6765167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
 }
-@media (max-width: 992px)
-{
-    .toggle{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .toggle:before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-        box-shadow: 0 10px 0 #000;
-        transition: 0.5s;
-        text-align: center;
-    }
-    .toggle:after{
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-         transition: 0.5s;
-    }
-        header, 
-        header.sticky
-        {
-            padding: 5px 50px;
-            background: #fff;
-        }
-        header ul{
-            position: absolute;
-            top: 49px;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            text-align: center;
-            overflow: auto;
-            background: #fff;
-            visibility: hidden;
-            opacity: 0;
-        }
-        header.active ul{
-            visibility: visible;
-            opacity: 1;
-            display: block;
-            padding-top: 20px;
-        }
-        header.active ul li a{
-            display: inline-block;
-            margin: 10px 0;
-            font-size: 20px;
-        }
-        header .logo,
-        header ul li a{
-            color:#000;
-        }
-        
+.hero-content{
+    color: #fff;
+    font-size: 50px;
+}
+.big{
+    font-size: 65px;
+}
+
+/* About section */
+.about{
+    padding-top: 100px;
+    margin: 50px 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.btn{
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    background-color: black;
+
+    padding: 15px 30px;
+}
+.btn > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Services section */
+.services{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 90px;
+}
+.services-img{
+    width: 200px;
+}
+.box{
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Contact */
+.contact{
+    padding-top: 100px;
+    text-align: center;
+}
+.contact-input{
+    padding-top: 40px;
+}
+.input-small{
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin-right: 20px;
+}
+.input-big{
+    width: 650px;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.footer{
+    text-align: center;
+    padding: 100px 70px 60px 70px;
 }
 
 
