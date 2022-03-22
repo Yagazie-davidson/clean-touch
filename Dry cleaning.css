@@ -13,7 +13,7 @@ body{
     
 }
 .blue{
-    color: rgb(83, 83, 212);
+    color:#acdce7
 }
 
 /* Header section */
@@ -61,6 +61,7 @@ a:hover{
 .hero-content{
     color: #fff;
     font-size: 50px;
+    margin-top: 100px;
 }
 .big{
     font-size: 65px;
@@ -91,7 +92,7 @@ a:hover{
 
 /* Services section */
 .services{
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
 }
 .service-container{
@@ -148,6 +149,7 @@ a:hover{
     }
     header ul li a{
         margin: 0 5px;
+        font-size: 12px;
         letter-spacing: 1px;
         font-weight: 300;
     }
@@ -162,6 +164,9 @@ a:hover{
         font-size: 32.5px;
     }
     .about{
+        padding-top: 70px;
+    }
+    .about > p{
         padding-top: 20px;
     }
     .service-container{
