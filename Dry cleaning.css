@@ -144,7 +144,7 @@ a:hover{
         font-size: 12px;
     }
     header ul{
-        margin-right: 60px;
+        margin-right: 5px;
     }
     header ul li a{
         margin: 0 5px;
@@ -152,7 +152,7 @@ a:hover{
         font-weight: 300;
     }
     .hero{
-        height: 50vh;
+        height: 80vh;
     }
     .hero-content{
         color: #fff;
@@ -161,7 +161,11 @@ a:hover{
     .big{
         font-size: 32.5px;
     }
+    .about{
+        padding-top: 20px;
+    }
     .service-container{
+        padding-top: 0px;
         flex-direction: column;
     }
     .box{
